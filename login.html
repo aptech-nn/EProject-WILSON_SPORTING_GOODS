@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+         body{
+            background-color: grey;
+            background-repeat: no-repeat;
+            background-size: cover;
+         }
+        .login{
+            background-color: rgb(223, 221, 221);
+            box-shadow: 0px 0px 10px black;
+            display: flex;
+            height: 500px;
+            width: 800px;
+            text-align: center;
+            margin-top: 150px;
+            margin-left: 350px;
+        }
+
+        .left img {
+            height: 500px;
+            width: 350px;
+        }
+
+        .right {
+            width: 400px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .right h1 {
+            margin-top: 20px;
+            letter-spacing:2px;
+            font-weight: bold;
+        }
+
+        .right p {
+            margin-top: 7px;
+            margin-bottom: 10px;
+            color: black;
+            font-size: 14px;
+        }
+
+        .right input {
+            margin-bottom: 20px;
+            width: 300px;
+            padding: 10px;
+        }
+
+        label {
+            margin-right: 275px;
+        }
+
+        .pas {
+            margin-right: 250px;
+        }
+
+        .forgot{
+            margin-right: 200px;
+        }
+        a{
+            text-decoration: none;
+            font-size: 17px;
+            color: black;
+        }
+        .last p, a{
+            font-size: 17px;
+        }
+        button{
+            background-color: rgb(78, 76, 76);
+            font-weight: bolder;
+            letter-spacing: 1px;
+            color: white;
+            width: 320px;
+            border: none;
+            padding: 15px;
+            margin: 10px;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+        .one:hover{
+            background-color: white;
+            border: 2px solid red;
+            padding: 13px;
+            color: black;
+        }
+        .two{
+            margin-bottom: 10px;
+
+        }
+        .one{
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="login">
+        <div class="left">
+            <img src="https://i.pinimg.com/736x/e9/18/91/e91891691ae76a634b55452a6c88072b.jpg"
+                alt="">
+        </div>
+        <div class="right">
+            <h1>WELOCME TO <br> WILSON</h1>
+            <p>Kindly inter your details to proceed.</p>
+            <input type="text" placeholder="email" id="email"> <br>
+            <input type="text" placeholder="password" id="password"> <br>
+
+            <a class="forgot" href="#">Forgot Password?</a><br>
+            <button class="one" onclick="myfile()">login</button><br>
+            
+            <p class="last">Don't have an account? <a href="#">Sign Up</a> for free.</p>
+        </div>
+    </div>
+
+
+    <script>
+        function myfile() {
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            event.preventDefault();
+            let emailpattern = /^[a-zA-Z0-9_+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3,}$/;
+            let passwordpattern = /^(?=.[a-z])(?=.[A-Z])(?=.[0-9])(?=.[@#$%^&])[a-zA-Z0-9@#$%^&]{8}$/;
+
+            if (!emailpattern.test(email)) {
+                alert('enter your email');
+                return false;
+            }
+            if (!passwordpattern.test(password)) {
+                alert('enter your password');
+                return false;
+            }
+            alert('login your successfully');
+            return true;
+        
+        };
+
+       
+        
+        </script>

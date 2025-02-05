@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wilson Sports Goods</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .navbarr {
+      background-color: black !important;
+      height: 100px;
+
+
+    }
+
+    .input {
+      border: none;
+      background-color: transparent !important;
+      color: white !important;
+      width: 650px;
+    }
+
+    .input::placeholder {
+      color: rgb(160, 153, 153);
+    }
+
+
+    .container-fluid img {
+      width: 270px;
+      margin-left: 100px;
+      margin-right: 50px;
+      margin-top: 30px;
+
+    }
+
+    .icons i {
+      color: white !important;
+    }
+
+    .icons i {
+      margin: 20px;
+    }
+
+    #icon {
+      margin-right: 70px;
+    }
+
+    .d-flex {
+      border-bottom: 1px solid white;
+    }
+
+    .list {
+      background-color: black;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .list a {
+      margin: 50px;
+      color: white;
+      text-decoration: none;
+    }
+
+
+    .pera {
+      height: 25px;
+      text-align: center;
+      margin: 5px;
+      letter-spacing: 5px;
+    }
+
+    .carousel-inner img {
+      height: 60vh;
+      object-fit: cover;
+    }
+
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    .carousel-caption h5 {
+      font-weight: bolder;
+    }
+
+
+    .footer-container {
+      background-color: black;
+      color: white;
+      padding: 30px;
+    }
+
+    footer .last {
+      text-align: center;
+      background-color: rgb(24, 23, 23);
+      padding: 10px;
+      font-size: 14px;
+      color: white;
+      letter-spacing: 2px;
+      margin-bottom: 0px;
+    }
+
+    #firstcol p {
+      margin-left: 150px;
+    }
+
+    .footer-container a {
+      margin-left: 150px;
+      list-style: none;
+      font-size: 15px;
+    }
+
+    .footer-container h4 {
+      margin-left: 150px;
+      text-decoration: underline 1px solid;
+      margin-bottom: 20px;
+      margin-top: 30px;
+    }
+
+    .card h2 {
+      font-size: 18px;
+
+    }
+
+    .footer-container i {
+      margin: 7px;
+      font-size: 20px;
+    }
+
+    .d-block {
+      height: 500px;
+    }
+
+    .card {
+      background-color: rgb(247, 240, 240);
+      height: 280px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      border: none;
+    }
+
+
+    .card img {
+      height: 230px;
+
+    }
+
+    .card:hover {
+      transform: scale(1.02)
+    }
+
+    a {
+      font-family: Georgia, Times, 'Times New Roman', serif;
+      text-decoration: none;
+      color: black;
+    }
+
+    .peragraph {
+      text-align: center;
+      width: 850px;
+      margin-left: 350px;
+      padding: 30px;
+      margin-top: 30px;
+    }
+
+    .div-content img {
+      margin-top: 70px;
+      height: 500px;
+      margin-left: 145px;
+      width: 82%;
+    }
+
+    .container-images {
+      display: flex;
+      margin-top: 50px;
+      margin-left: 130px;
+    }
+
+    .container-images img {
+      width: 410px;
+      margin: 15px;
+    }
+
+    .container-images img:hover {
+      transform: scale(1.02);
+    }
+
+    .second {
+      margin-bottom: 30px;
+    }
+
+    .maincon {
+      margin-top: 50px;
+    }
+
+    .brands {
+      display: flex;
+      width: 190.5vw;
+      margin-left: 140px;
+    
+      background-color: rgb(216, 213, 213);
+    }
+
+    .brands1 {
+      margin-left: 150px;
+      
+    }
+
+    .brands img {
+      height: 80px;
+      margin: 65px;
+      padding: 15px;
+    }
+
+    .brands img:hover {
+      border: 1px solid black;
+    }
+
+    .more {
+      display: flex;
+      margin-top: 50px;
+    }
+
+    .more img {
+      height: 250px;
+      width: 400px;
+    }
+
+    .first img {
+      margin-left: 145px;
+      margin-bottom: 20px;
+      height: 500px;
+      width: 795px;
+    }
+
+    .secondd img {
+      width: 490px;
+    }
+
+    .div-sale img {
+      margin-left: 145px;
+      width: 82%;
+      height: 100px;
+      margin-bottom: 30px;
+    }
+
+    .arrivals {
+      display: flex;
+      margin-top: 20px;
+      margin-left: 125px;
+      text-align: center;
+      margin-bottom: 50px;
+
+    }
+
+    .newone {
+      margin-left: 135px;
+      margin-top: 50px;
+    }
+
+    .new-cards p {
+      font-size: 12px;
+      padding: 7px;
+    }
+
+    .new-cards h6 {
+      color: red;
+    }
+
+    .new-cards {
+
+      height: 300px;
+      width: 200px;
+      margin: 10px;
+      border: 1px solid grey ;
+    }
+
+    .new-cards:hover {
+      transform: scale(1.02);
+    }
+
+    .new-cards img {
+      height: 200px;
+      width: 180px;
+    }
+
+  .black a{
+    
+    
+    font-size: 22px;
+    width: 90%;
+    box-shadow: 2px 2px 10px brown;
+    padding: 7px;
+    
+  margin-left: 80%;
+  color: black;
+}
+ 
+    .black h2 {
+      margin-top: 50px;
+      font-weight: bolder;
+    }
+
+    .black p {
+      margin-top: 55px;
+      font-size: 16px;
+    }
+
+
+    
+
+    .caro {
+      margin-top: 50px;
+      margin-left: 145px;
+      display: flex;
+      width: 80%;
+    }
+
+    .imageone img {
+      margin-right: 10px;
+      height: 500px;
+      width: 400px;
+    }
+
+    .imagetwo img {
+      height: 500px;
+      width: 880px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="pera">
+      <p>𝓢𝓱𝓸𝓹 𝓝𝓸𝔀, 𝓟𝓵𝓪𝔂 𝓕𝓸𝓻𝓮𝓿𝓮𝓻
+      </p>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbarr">
+      <div class="container-fluid">
+        <img src="Minimalist_Line_Business_Logo_1-removebg-preview.png" alt="">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-flex" role="search">
+            <input class="form-control me-2 input" type="search" placeholder="I'm searching for..." aria-label="Search">
+          </div>
+          <div class="icons">
+            <i id="icon" class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="list">
+      <a href="home.html">HOME</a>
+      <a href="brands.html">BRANDS</a>
+      <a href="comparison.html">COMPARISON</a>
+      <a href="summary.html">SUMMARY</a>
+      <a href="contactus.html">CONTACT US</a>
+
+    </div>
+  </header>
+
+
+
+
+
+
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://officesnapshots.com/wp-content/uploads/2018/02/wilson-sporting-goods-offices-chicago-gensler-22-1200x666.jpg"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h5>Welcome to Sports World</h5>
+          <p>Explore the best sports gear and accessories.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://officesnapshots.com/wp-content/uploads/2018/02/wilson-sporting-goods-offices-chicago-gensler-15-700x428.jpg"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h5>Top Quality Products</h5>
+          <p>Built for performance and durability.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="peragraph">
+    <h1>𝑪𝑨𝑻𝑬𝑮𝑶𝑹𝑰𝑬𝑺</h1>
+    <h4>𝐋𝐨𝐰-𝐩𝐫𝐢𝐜𝐞𝐝 𝐬𝐩𝐨𝐫𝐭𝐬𝐰𝐞𝐚𝐫 𝐢𝐧 𝐡𝐢𝐠𝐡 𝐪𝐮𝐚𝐥𝐢𝐭𝐲 𝐛𝐲 𝐟𝐚𝐦𝐨𝐮𝐬 𝐛𝐫𝐚𝐧𝐝𝐬
+    </h4>
+    <p>𝚆𝚎 𝚕𝚘𝚟𝚎 𝚜𝚙𝚘𝚛𝚝𝚜 – 𝚊𝚗𝚍 𝚗𝚒𝚌𝚎 𝚙𝚛𝚒𝚌𝚎𝚜! 𝙷𝚎𝚛𝚎 𝚊𝚝 𝚂𝚙𝚘𝚛𝚝𝚂𝚙𝚊𝚛, 𝚠𝚎 𝚘𝚏𝚏𝚎𝚛 𝚊
+      𝚑𝚞𝚐𝚎 𝚌𝚑𝚘𝚒𝚌𝚎 𝚘𝚏 𝚜𝚎𝚕𝚎𝚌𝚝𝚎𝚍 𝚜𝚙𝚘𝚛𝚝𝚜𝚠𝚎𝚊𝚛 𝚊𝚗𝚍 𝚊𝚌𝚌𝚎𝚜𝚜𝚘𝚛𝚒𝚎𝚜 𝚊𝚝
+      𝚞𝚗𝚋𝚎𝚊𝚝𝚊𝚋𝚕𝚎 𝚕𝚘𝚠 𝚙𝚛𝚒𝚌𝚎𝚜. 𝙵𝚛𝚘𝚖 𝚗𝚘𝚗-𝚜𝚕𝚒𝚙𝚙𝚒𝚗𝚐 𝚏𝚘𝚘𝚝𝚠𝚎𝚊𝚛 𝚊𝚗𝚍
+      𝚖𝚊𝚝𝚌𝚑𝚒𝚗𝚐 𝚜𝚙𝚘𝚛𝚝𝚜𝚠𝚎𝚊𝚛 𝚝𝚘 𝚖𝚎𝚛𝚌𝚑𝚊𝚗𝚍𝚒𝚜𝚎 𝚘𝚏 𝚢𝚘𝚞𝚛 𝚏𝚊𝚟𝚘𝚞𝚛𝚒𝚝𝚎 𝚌𝚕𝚞𝚋 – 𝚠𝚎
+      𝚜𝚎𝚕𝚕 𝚎𝚟𝚎𝚛𝚢𝚝𝚑𝚒𝚗𝚐 𝚝𝚑𝚊𝚝 𝚖𝚊𝚔𝚎𝚜 𝚢𝚘𝚞𝚛 𝚊𝚝𝚑𝚕𝚎𝚝𝚎’𝚜 𝚑𝚎𝚊𝚛𝚝 𝚋𝚎𝚊𝚝 𝚏𝚊𝚜𝚝𝚎𝚛!
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://plus.unsplash.com/premium_photo-1722351690065-210079a0a82c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y3JpY2tldCUyMG1hdGNofGVufDB8fDB8fHww" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <a href="cricket.html">
+              <h2>CRICKET</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://thegodofsports.com/wp-content/uploads/2022/11/badminton-player-orange-uniform-ready-serve-1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="">
+              <h2>BADMINTON</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/91/10/29/911029875a238258bc46956623b9bfb8.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <a href="boxing.html">
+              <h2>BOXING</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9nOfdudpnStuZNAeZLdA53pevOIh9bbkPFw&s"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="basketball.html">
+              <h2>BASKETBALL</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/7f/50/d3/7f50d33a676544d7b96236519d482e91.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <a href="">
+              <h2>SWIMMING</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/e4/b6/d3/e4b6d3349e1d7148d5e8c9dba828b823.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <a href="football.html">
+              <h2>FOOTBALL</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/84/af/f8/84aff8eddd29cef0a984121b77108851.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <a href="tennis.html">
+              <h2>TENNIS</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFm6voOyMGp3N2Wrw6l4Bn6tnhtedWPBLQRw&s"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="https://images.pexels.com/photos/18511482/pexels-photo-18511482.jpeg?cs=srgb&dl=pexels-jenny-k-181141-18511482.jpg&fm=jpg">
+              <h2>TABLE TENNIS</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/06/d9/d4/06d9d430e26735d5fb78dbb637c6feb1.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <a href="">
+              <h2>VOLLEY BALL</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/9d/f2/a2/9df2a238e1ed2f9d3902a7bab0026fd1.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <a href="skating.html">
+              <h2>SKATING</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/88/c6/83/88c6833d6641b2517d9d2c268435a5cd.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <a href="">
+              <h2>SQUASH</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/9a/ea/59/9aea59d500a3f560d0a8958e418fa25f.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <a href="">
+              <h2>OTHER SPORTS</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="div-content">
+    <img src="https://www.namsports.com/Images/Product/CategoriesBanner/football-22781996610587172.webp" alt="">
+  </div>
+  <div class="div-sale">
+    <img src="https://su1na.b-cdn.net/content/creative/10-off-Fan-Gear-narrow.png" alt="">
+  </div>
+
+  <div class="container-images">
+    <div class="div-one">
+      <img src="https://utsports.pk/cdn/shop/files/ca_bats.png?v=1614309318" alt="">
+    </div>
+    <div class="div-two">
+      <img class="second" src="https://utsports.pk/cdn/shop/files/weight_1.png?v=1614309325" alt=""><br>
+      <img src="https://utsports.pk/cdn/shop/files/swimming_01.png?v=1614309325" alt="">
+    </div>
+    <div class="div-three">
+      <img src="https://utsports.pk/cdn/shop/files/ut_bags.png?v=1614309318" alt="">
+    </div>
+  </div>
+
+
+  <div class="caro">
+    <div class="imageone">
+      <img src="https://www.thesportstore.pk/image/cache/02-02-2018/26-08-2024/Website-Home-Page-1-393x517.png" alt="">
+    </div>
+    <div class="imagetwo">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://www.thesportstore.pk/image/cache/02-04-21/06-11-2024/06-12-2024/Cycling-Clothing-1008x601.png"
+              class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.thesportstore.pk/image/cache/02-04-21/06-11-2024/06-12-2024/Hiking-Backpack%20(1)-1008x601.png"
+              class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.thesportstore.pk/image/cache/02-04-21/06-11-2024/06-12-2024/Deko-Bike-cycling-1008x601.png"
+              class="d-block" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="maincon">
+    <div class="brands1">
+      <h1>𝐒𝐇𝐎𝐏 𝐁𝐘 𝐁𝐑𝐀𝐍𝐃𝐒</h1>
+    </div>
+    <div class="brands">
+      <img class="once" src="https://frasersdev.a.bigcontent.io/v1/static/nike-logo-black-svg" alt="">
+      <img src="https://frasersdev.a.bigcontent.io/v1/static/adidas-logo-black-svg" alt="">
+      <img src="https://frasersdev.a.bigcontent.io/v1/static/underarmour-logo-black-svg" alt="">
+      <img class="oncee" src="https://frasersdev.a.bigcontent.io/v1/static/on-running_1" alt="">
+      <img src="https://frasersdev.a.bigcontent.io/v1/static/the-north-face-logo-black" alt="">
+    </div>
+  </div>
+
+
+  <div class="more">
+    <div class="first">
+      <img src="https://www.namsports.com/Images/General/Slider/130975673.webp" alt="">
+    </div>
+    <div class="secondd">
+      <img src="https://i.pinimg.com/736x/91/32/1f/91321fefb0f5ddb0efc4342ef193abda.jpg" alt=""><br>
+      <img src="https://su1na.b-cdn.net/content/creative/SaleandClearance-Banner.jpg" alt="">
+    </div>
+  </div>
+
+  
+
+
+
+  <div class="newone">
+    <h1>𝐍𝐄𝐖 𝐀𝐑𝐑𝐈𝐕𝐀𝐋𝐒</h1>
+  </div>
+
+  <div class="arrivals">
+    <div class="new-cards">
+      <a href="#"><img src="https://ethingzz.com/storage/app/public/product_images/01.18.10349088564.jpg" alt="">
+        <p>CA Vision 5000 - Tape Ball Bat - Black & Blue
+        </p>
+        <h6>Rs: 1999 /- PKR
+        </h6>
+      </a>
+    </div>
+    <div class="new-cards">
+      <a href="#"><img src="https://ethingzz.com/storage/app/public/product_images/02.09.551471239411.jpg" alt="">
+        <p>Cricket Batting Gloves - High Quality
+        </p>
+        <h6>Rs: 3000 /- PKR
+        </h6>
+      </a>
+    </div>
+    <div class="new-cards">
+      <a href="#"><img src="https://ethingzz.com/storage/app/public/product_images/06.25.05568542737.jpg" alt="">
+        <p>Pack of 2 Plastic Hard Ball for Kids - Red
+        </p>
+        <h6>Rs: 360 /- PKR
+        </h6>
+      </a>
+    </div>
+    <div class="new-cards">
+      <a href="#"><img src="https://ethingzz.com/storage/app/public/product_images/07.04.55921569213.jpg" alt="">
+        <p>Head Protection Helmet for Skating Games for Kids
+        </p>
+        <h6>Rs: 875 /- PKR
+        </h6>
+      </a>
+    </div>
+    <div class="new-cards">
+      <a href="#"><img
+          src="https://ethingzz.com/storage/app/public/product_images/YVQeEDREz5m4FowLg9PCQkaO0AvAr2gQg1UJX4O4.jpeg"
+          alt="">
+        <p>Goggles Rubber Earplug For Swimming Pack Of 2
+        </p>
+        <h6>Rs: 1549 /- PKR
+        </h6>
+      </a>
+    </div>
+    <div class="new-cards">
+      <a href="#"><img
+          src="https://ethingzz.com/storage/app/public/product_images/egjefCB5Bw31f5Gvx0vfTP8fxtDtqyeZyVSvoYJm.jpeg"
+          alt="">
+        <p>Goggles For Swimming Pack Of 2</p>
+        <h6>Rs: 2099 /- PKR
+        </h6>
+      </a>
+    </div>
+  </div>
+  <div class="black">
+    <h2>BECOME AN INSIDER</h2>
+    <p>Be the first to hear about the latest products, sales and events from Wilson.
+    </p>
+    
+    <a href="login.html">login</a>
+    
+  </div>
+  <footer>
+    <div class="footer-container">
+      <div class="row">
+        <div id="firstcol" class="col-md-4">
+          <h4>Wilson Sporting Goods</h4>
+          <p>Address: [North-Nazimabad Karachi Pakistan.]</p>
+          <p>Email: info@wilson.com</p>
+          <p>Phone: [03334907469]</p>
+        </div>
+
+        <div class="col-md-4">
+          <h4>Quick Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="WilsonSportsGoods.html" class="text-white">Home</a></li>
+            <li><a href="about.html" class="text-white">About Us</a></li>
+            <li><a href="contactus.html" class="text-white">Contact Us</a></li>
+            <li><a href="terms.html" class="text-white">Terms & Conditions</a></li>
+            <li><a href="privacy.html" class="text-white">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h4>Follow Us</h4>
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i> Facebook</a><br>
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i> Instagram</a><br>
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i> Twitter</a><br>
+          <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i> YouTube</a><br>
+        </div>
+      </div>
+    </div>
+    <p class="last">© 2025 Wilson Sporting Goods. All rights reserved.</p>
+
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

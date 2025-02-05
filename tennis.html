@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+ * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+    font-family: 'Poppins', sans-serif;
+  }
+  .navbarr {
+      background-color: black !important;
+      height: 100px;
+    }
+
+    .input {
+      border: none;
+      background-color: transparent !important;
+      color: white !important;
+      width: 650px;
+    }
+    .input::placeholder{
+        color: rgb(160, 153, 153);
+    }
+
+    .container-fluid img {
+      width: 270px;
+      margin-left: 100px;
+      margin-right: 50px;
+      margin-top: 30px;
+    }
+    .icons i {
+      color: white !important;
+    }
+    .icons i {
+      margin: 20px;
+    }
+    #icon {
+      margin-right: 70px;
+    }
+    .d-flex {
+      border-bottom: 1px solid white;
+    }
+    .list {
+      background-color: black;
+      padding: 10px;
+      text-align: center;
+    }
+    .list a {
+      margin: 50px;
+      color: white;
+      text-decoration: none;
+    }
+    .pera {
+      height: 25px;
+      text-align: center;
+      margin: 5px;
+      letter-spacing: 5px;
+    }
+    .black{
+       margin-top: 50px;
+      display: flex;
+      justify-content: space-around;
+      background-color: red;
+      height: 125px;
+      color: white;
+    }
+    .black h2{
+      margin-top: 50px;
+      font-weight: bolder;
+    }
+    .black p{
+      margin-top: 55px;
+      font-size: 16px;
+    }
+    .black button{
+      font-weight: bold;
+      letter-spacing: 2px;
+      width: 150px;
+      height: 50px;
+      margin-top: 40px;
+      color: white;
+      background-color: black;
+      border: 2px solid white;
+    }
+    .black button:hover{
+      background-color: white;
+      border: 2px solid black;
+      color: red;
+    }
+
+    .footer-container {
+      background-color: black;
+      color: white;
+      padding: 30px;
+    }
+    footer .last{
+      text-align: center;
+       background-color: rgb(24, 23, 23);
+       padding: 10px;
+       font-size: 14px;
+       color: white;
+       letter-spacing: 2px;
+       margin-bottom: 0px;
+    }
+    #firstcol p{
+      margin-left: 150px;
+    }
+    .footer-container a{
+      margin-left: 150px;
+      list-style: none;
+      font-size: 15px;
+    }
+    .footer-container h4 {
+      margin-left: 150px;
+      text-decoration: underline 1px solid;
+      margin-bottom: 20px;
+      margin-top: 30px;
+    }
+    .card h2{
+      font-size: 18px;
+
+    }
+
+    .footer-container i {
+      margin: 7px;
+      font-size: 20px;
+    }
+
+        h1 {
+           background-color: red;
+           text-align: center; 
+           font-size: 40px; 
+           padding: 20px;
+           color: #f5efef; 
+        }
+        .card-body{
+            height: 200px;
+            
+        }
+        .card img{
+            margin-left: 30px;
+            height: 145px;
+            width: 140px ;
+        }
+        .card{
+          text-align: center;
+          padding: 30px;
+          margin: 20px;
+          height: 400px;
+        }
+        .card:hover {
+          transform: translateY(-1px);
+          box-shadow: 5px 5px 15px rgb(109, 107, 107); 
+        }
+        input{
+            width:50px ;
+        }
+        .btn{
+          background-color: rgb(19, 18, 18);
+          color: rgb(231, 226, 226);
+          font-weight: bolder;
+          border: none;
+          padding: 10px;
+          border-radius: 4px;
+          margin-top: 20px;
+          width: 150px;
+        }
+        .btn:hover{
+            background-color: white;
+            border: 2px solid red;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="pera">
+          <p>𝓢𝓱𝓸𝓹 𝓝𝓸𝔀, 𝓟𝓵𝓪𝔂 𝓕𝓸𝓻𝓮𝓿𝓮𝓻
+          </p>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbarr">
+          <div class="container-fluid">
+            <img src="Minimalist_Line_Business_Logo_1-removebg-preview.png" alt="">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex" role="search">
+                <input class="form-control me-2 input" type="search" placeholder="I'm searching for..." aria-label="Search">
+              </div>
+              <div class="icons">
+                <i id="icon" class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="list">
+          <a href="#">HOME</a>
+          <a href="#">MENU</a>
+          <a href="#">BRANDS</a>
+          <a href="#">COMPARISON</a>
+          <a href="#">SUMMARY</a>
+          <a href="#">CONTACT US</a>
+        </div>
+      </header>
+
+
+      <h1 class="text-center my-4">𝒯𝑒𝓃𝓃𝒾𝓈</h1>
+
+      <div class="contianer" >
+      <div class="row">
+      <div class="col-md-3">   
+      <div class="card" >
+      <img src="https://www.highsparkind.com/wp-content/uploads/2023/05/10-50.jpg" class="" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Tennis Unform</h5>
+        <p class="Prices">Price: $740</p>
+        <label for="#">Quantity</label>
+        <input type="number" min="0" value="0"><br> 
+        <a href="#" class="btn">Buy Now </a>
+      </div>
+      </div>
+      </div>
+      
+      <div class="col-md-3">   
+      <div class="card" >
+        <img src="https://i5.walmartimages.com/asr/44fbb4fa-0b88-4e27-8c12-08e451329893.3b21ffe5e8b7c99370b27327fc1c4e9e.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" class="" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Tennis Shoulder Bag </h5>
+          <p class="Prices">Price: $42,54</p>
+          <label for="#">Quantity</label>
+          <input type="number" min="0" value="0"><br> 
+          <a href="#" class="btn">Buy Now </a>
+        </div>
+      </div>
+      </div>
+      
+      <div class="col-md-3">   
+      <div class="card" >
+          <img src="https://nwscdn.com/media/catalog/product/cache/h265xw265/e/n/entire_rain_shuttle_structure_is_rust-resistant.jpg" class="" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rain Shuttle Squeege</h5>
+            <p class="Prices">Price: $16,99</p>
+            <label for="#">Quantity</label>
+            <input type="number" min="0" value="0"><br> 
+            <a href="#" class="btn">Buy Now </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-3">   
+        <div class="card" >
+            <img src="https://www.tenniswarehouse.com.au/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/t/e/tennistutor_ballmachine5.1601959372.jpg" class="" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tennis Tutor Ball Machine</h5>
+              <p class="Prices">Price: $295,59</p>
+              <label for="#">Quantity</label>
+              <input type="number" min="0" value="0"><br> 
+              <a href="#" class="btn">Buy Now </a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-3">   
+          <div class="card" >
+              <img src="https://assets.mgimgs.com/mgimgs/rk/images/dp/wcm/202434/0015/sporty-stripe-tennis-racket-cover-o.jpg" class="" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Tennis Racket cover</h5>
+                <p class="Prices">Price: $12,00</p>
+                <label for="#">Quantity</label>
+                <input type="number" min="0" value="0"><br> 
+                <a href="#" class="btn">Buy Now </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-3">   
+            <div class="card" >
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU-UEO6fylnenkYYQw9QGIfIFZSwN9icHsMw&s" class="" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tennis Balls</h5>
+                  <p class="Prices">Price: $7100</p>
+                  <label for="#">Quantity</label>
+                  <input type="number" min="0" value="0"><br> 
+                  <a href="#" class="btn">Buy Now </a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-3">   
+              <div class="card" >
+                  <img src="https://m.media-amazon.com/images/I/71yKvxoNQBL._SS1000_.jpg" class="" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Tennis Shoes</h5>
+                    <p class="Prices">Price: $599</p>
+                    <label for="#">Quantity</label>
+                    <input type="number" min="0" value="0"><br> 
+                    <a href="#" class="btn">Buy Now </a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-md-3">   
+                <div class="card" >
+                    <img src="https://nwscdn.com/media/catalog/product/cache/h700xw700/c/l/classic-tour-tennis-balls.jpg" class="" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Tennis Balls [4 Ball Tubes]</h5>
+                      <p class="Prices">Price: $800</p>
+                      <label for="#">Quantity</label>
+                      <input type="number" min="0" value="0"><br> 
+                      <a href="#" class="btn">Buy Now </a>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-md-3">   
+                  <div class="card" >
+                      <img src="https://www.tennisleo.fi/wp-content/uploads/2024/01/Yonex-Rackets-jpeg.webp" class="" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Tennis Racket</h5>
+                        <p class="Prices">Price: $760</p>
+                        <label for="#">Quantity</label>
+                        <input type="number" min="0" value="0"><br> 
+                        <a href="#" class="btn">Buy Now </a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3">   
+                    <div class="card" >
+                        <img src="https://i5.walmartimages.com/asr/711757a5-d1d9-457e-9a33-3319a04143b4.4cda2352f99039eed3cddff3305d3298.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" class="" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Ball String Tennis</h5>
+                          <p class="Prices">Price: $800</p>
+                          <label for="#">Quantity</label>
+                          <input type="number" min="0" value="0"><br> 
+                          <a href="#" class="btn">Buy Now </a>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="col-md-3">   
+                      <div class="card" >
+                          <img src="https://busy-tennis-players.com/wp-content/uploads/2022/07/xTennisEquipment.jpg.pagespeed.ic_.XOWa7c2TPI.jpg" class="" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Tennis Set</h5>
+                            <p class="Prices">Price: $30,900</p>
+                            <label for="#">Quantity</label>
+                            <input type="number" min="0" value="0"><br> 
+                            <a href="#" class="btn">Buy Now </a>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="col-md-3">   
+                        <div class="card" >
+                            <img src="https://serveandvolleytennis.com/wp-content/uploads/2018/11/topspinpro-45.jpg" class="" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Pickleball</h5>
+                              <p class="Prices">Price: $14,000</p>
+                              <label for="#">Quantity</label>
+                              <input type="number" min="0" value="0"><br> 
+                           <a href="#" class="btn">Buy Now </a>
+                        </div>
+                     </div>
+                  </div>
+             </div>
+          </div>
+      
+      
+
+<div class="black">
+    <h2>BECOME AN INSIDER</h2>
+    <p>Be the first to hear about the latest products, sales and events from Wilson.
+    </p>
+    <button>Sign Up</button>
+  </div>
+
+  
+  <footer>
+    <div class="footer-container">
+      <div class="row">
+        <div id="firstcol" class="col-md-4">
+          <h4>Wilson Sporting Goods</h4>
+          <p>Address: [North-Nazimabad Karachi Pakistan.]</p>
+          <p>Email: info@wilson.com</p>
+          <p>Phone: [03334907469]</p>
+        </div>
+  
+        <div class="col-md-4">
+          <h4>Quick Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white">Home</a></li>
+            <li><a href="contact.html" class="text-white">About Us</a></li>
+            <li><a href="contact.html" class="text-white">Contact Us</a></li>
+            <li><a href="terms.html" class="text-white">Terms & Conditions</a></li>
+            <li><a href="privacy.html" class="text-white">Privacy Policy</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-4">
+          <h4>Follow Us</h4>
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i> Facebook</a><br>
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i> Instagram</a><br>
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i> Twitter</a><br>
+          <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i> YouTube</a><br>
+        </div>
+      </div>
+    </div>
+     <p class="last">© 2025 Wilson Sporting Goods. All rights reserved.</p>
+
+  </footer>
+
+</body>
+</html>

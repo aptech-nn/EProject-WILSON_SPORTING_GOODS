@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+ * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+    font-family: 'Poppins', sans-serif;
+  }
+  .navbarr {
+      background-color: black !important;
+      height: 100px;
+    }
+
+    .input {
+      border: none;
+      background-color: transparent !important;
+      color: white !important;
+      width: 600px;
+    }
+    .input::placeholder{
+        color: rgb(160, 153, 153);
+    }
+
+    .container-fluid img {
+      width: 270px;
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-top: 30px;
+    }
+    .icons i {
+      color: white !important;
+    }
+    .icons i {
+      margin: 20px;
+    }
+    #icon {
+      margin-right: 50px;
+    }
+    .d-flex {
+      border-bottom: 1px solid white;
+    }
+    .list {
+      background-color: black;
+      padding: 10px;
+      text-align: center;
+    }
+    .list a {
+      margin: 50px;
+      color: white;
+      text-decoration: none;
+    }
+    .pera {
+      height: 25px;
+      text-align: center;
+      margin: 5px;
+      letter-spacing: 5px;
+    }
+    .black{
+       margin-top: 50px;
+      display: flex;
+      justify-content: space-around;
+      background-color: red;
+      height: 125px;
+      color: white;
+    }
+    .black h2{
+      margin-top: 50px;
+      font-weight: bolder;
+    }
+    .black p{
+      margin-top: 55px;
+      font-size: 16px;
+    }
+    .black button{
+      font-weight: bold;
+      letter-spacing: 2px;
+      width: 150px;
+      height: 50px;
+      margin-top: 40px;
+      color: white;
+      background-color: black;
+      border: 2px solid white;
+    }
+    .black button:hover{
+      background-color: white;
+      border: 2px solid black;
+      color: red;
+    }
+
+    .footer-container {
+      background-color: black;
+      color: white;
+      padding: 30px;
+    }
+    footer .last{
+      text-align: center;
+       background-color: rgb(24, 23, 23);
+       padding: 10px;
+       font-size: 14px;
+       color: white;
+       letter-spacing: 2px;
+       margin-bottom: 0px;
+    }
+    #firstcol p{
+      margin-left: 150px;
+    }
+    .footer-container a{
+      margin-left: 150px;
+      list-style: none;
+      font-size: 15px;
+    }
+    .footer-container h4 {
+      margin-left: 150px;
+      text-decoration: underline 1px solid;
+      margin-bottom: 20px;
+      margin-top: 30px;
+    }
+    .card h2{
+      font-size: 18px;
+
+    }
+
+    .footer-container i {
+      margin: 7px;
+      font-size: 20px;
+    }
+
+        h1 {
+           background-color: red;
+           text-align: center; 
+           font-size: 40px; 
+           padding: 20px;
+           color: #f5efef; 
+        }
+        .card-body{
+            height: 200px;
+            
+        }
+        .card img{
+            margin-left: 30px;
+            height: 145px;
+            width: 140px ;
+        }
+        .card{
+          text-align: center;
+          padding: 30px;
+          margin: 20px;
+          height: 400px;
+        }
+        .card:hover {
+          transform: translateY(-1px);
+          box-shadow: 5px 5px 15px rgb(109, 107, 107); 
+        }
+        input{
+            width:50px ;
+        }
+        .btn{
+          background-color: rgb(19, 18, 18);
+          color: rgb(231, 226, 226);
+          font-weight: bolder;
+          border: none;
+          padding: 10px;
+          border-radius: 4px;
+          margin-top: 20px;
+          width: 150px;
+        }
+        .btn:hover{
+            background-color: white;
+            border: 2px solid red;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="pera">
+          <p>𝓢𝓱𝓸𝓹 𝓝𝓸𝔀, 𝓟𝓵𝓪𝔂 𝓕𝓸𝓻𝓮𝓿𝓮𝓻
+          </p>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbarr">
+          <div class="container-fluid">
+            <img src="Minimalist_Line_Business_Logo_1-removebg-preview.png" alt="">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex" role="search">
+                <input class="form-control me-2 input" type="search" placeholder="I'm searching for..." aria-label="Search">
+              </div>
+              <div class="icons">
+                <i id="icon" class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="list">
+          <a href="home.html">HOME</a>
+          <a href="brands.html">BRANDS</a>
+          <a href="comparison.html">COMPARISON</a>
+          <a href="summary.html">SUMMARY</a>
+          <a href="contactus.html">CONTACT US</a>
+        </div>
+      </header>
+
+
+</style>
+</head>
+<body>
+    <h1 class="text-center my-4">𝐵𝒶𝓈𝓀𝑒𝓉𝐵𝒶𝓁𝓁</h1>
+
+    <div class="contianer" >
+    <div class="row">
+    <div class="col-md-3">   
+    <div class="card" >
+    <img src="https://sublimationkings.com/wp-content/uploads/2017/09/10-1-450x450.png" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Unform</h5>
+      <p class="Prices">Price: $79,95</p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-3">   
+      <div class="card" >
+    <img src="https://au.imgix.net/2024/01/WNBA_Partnership_Desktop.jpg?auto=format&fm=pjgp&w=1920&s=8702b9417823e60bcbee3c0983cd3eb4" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Ball</h5>
+      <p class="Prices">Price: $760</p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-3">   
+    <div class="card" >
+    <img src="https://images.thdstatic.com/productImages/5271d32f-ca07-451c-9509-77e0e4408585/svn/basketball-goals-aok-ydw1-513-64_600.jpg" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Basketball Hoop</h5>
+      <p class="Prices">Price: $94,000</p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-3">   
+    <div class="card" >
+    <img src="https://image.made-in-china.com/2f0j00dWKcPYiRCLoh/Latest-College-Basketball-Jersey-Design-with-Team-Logo-Custom-Sportswear.webp" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Basketball Jersey</h5>
+      <p class="Prices">Price: $100,000</p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-3">   
+    <div class="card" >
+    <img src="https://www.wilson.com/sites/default/files/styles/full_region_ultra_slim/public/blog/BBALL%20FEATURE.png?" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Basketball Balls</h5>
+      <p class="Prices">Price: $790</p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-3">   
+    <div class="card" >
+    <img src="https://www.spalding.com/dw/image/v2/ABAH_PRD/on/demandware.static/-/Sites-masterCatalog_SPALDING/default/dw3ca1200a/images/hi-res/7B1560_S_angle.jpg?sw=338&sh=426&sm=cut&sfrm=jpg" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Portable Basketball</h5>
+      <p class="Prices">Price: $289,99</p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    
+    
+    <div class="col-md-3">   
+    <div class="card" >
+    <img src="https://s1.dswcdn.com/uploads/Nike_Air_Foamposite_Shoes/Air_Foamposite_One/Nike_Air_Foamposite_One_Silver_Black_Men_Basketball_Shoes_P1.jpg" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Basketball Shoe</h5>
+      <p class="Prices">Price: $289,99</p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-3">   
+    <div class="card" >
+    <img src="https://www.youcustomizeit.com/common/MAKE/567602/Basketball-Aluminum-Water-Bottles-MAIN-white-silver.jpg?lm=1693509952" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Water Bottle</h5>
+      <p class="Prices">Price: $550  </p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-3">   
+    <div class="card" >
+    <img src="https://slimages.macysassets.com/is/image/MCY/products/6/optimized/26646026_fpx.tif" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"> Basketball Jacket</h5>
+      <p class="Prices">Price: $850  </p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-3">   
+    <div class="card" >
+    <img src="https://m.media-amazon.com/images/I/41Qtcr4gbjL._SL500_.jpg" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">  Basketball Backpack</h5>
+      <p class="Prices">Price: $1000</p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-3">   
+    <div class="card" >
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZEmlbfEk79JsKixrY0pqxUo9CDI8sJViwMw&s" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">basketbal Equipment</h5>
+      <p class="Prices">Price: $32,00</p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-3">   
+    <div class="card" >
+    <img src="https://gh.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/72/0485672/1.jpg?7304" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Basketball Net Jumia</h5>
+      <p class="Prices">Price: $120.48</p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    </div>  
+    </div>
+
+<div class="black">
+    <h2>BECOME AN INSIDER</h2>
+    <p>Be the first to hear about the latest products, sales and events from Wilson.
+    </p>
+    <button>Sign Up</button>
+  </div>
+
+  
+  <footer>
+    <div class="footer-container">
+      <div class="row">
+        <div id="firstcol" class="col-md-4">
+          <h4>Wilson Sporting Goods</h4>
+          <p>Address: [North-Nazimabad Karachi Pakistan.]</p>
+          <p>Email: info@wilson.com</p>
+          <p>Phone: [03334907469]</p>
+        </div>
+  
+        <div class="col-md-4">
+          <h4>Quick Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white">Home</a></li>
+            <li><a href="contact.html" class="text-white">About Us</a></li>
+            <li><a href="contact.html" class="text-white">Contact Us</a></li>
+            <li><a href="terms.html" class="text-white">Terms & Conditions</a></li>
+            <li><a href="privacy.html" class="text-white">Privacy Policy</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-4">
+          <h4>Follow Us</h4>
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i> Facebook</a><br>
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i> Instagram</a><br>
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i> Twitter</a><br>
+          <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i> YouTube</a><br>
+        </div>
+      </div>
+    </div>
+     <p class="last">© 2025 Wilson Sporting Goods. All rights reserved.</p>
+
+  </footer>
+
+</body>
+</html>

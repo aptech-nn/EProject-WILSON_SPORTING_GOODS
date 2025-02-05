@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+ * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+    font-family: 'Poppins', sans-serif;
+  }
+  .navbarr {
+      background-color: black !important;
+      height: 100px;
+    }
+
+    .input {
+      border: none;
+      background-color: transparent !important;
+      color: white !important;
+      width: 600px;
+    }
+    .input::placeholder{
+        color: rgb(160, 153, 153);
+    }
+
+    .container-fluid img {
+      width: 270px;
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-top: 30px;
+    }
+    .icons i {
+      color: white !important;
+    }
+    .icons i {
+      margin: 20px;
+    }
+    #icon {
+      margin-right: 50px;
+    }
+    .d-flex {
+      border-bottom: 1px solid white;
+    }
+    .list {
+      background-color: black;
+      padding: 10px;
+      text-align: center;
+    }
+    .list a {
+      margin: 50px;
+      color: white;
+      text-decoration: none;
+    }
+    .pera {
+      height: 25px;
+      text-align: center;
+      margin: 5px;
+      letter-spacing: 5px;
+    }
+    .black{
+       margin-top: 50px;
+      display: flex;
+      justify-content: space-around;
+      background-color: red;
+      height: 125px;
+      color: white;
+    }
+    .black h2{
+      margin-top: 50px;
+      font-weight: bolder;
+    }
+    .black p{
+      margin-top: 55px;
+      font-size: 16px;
+    }
+    .black button{
+      font-weight: bold;
+      letter-spacing: 2px;
+      width: 150px;
+      height: 50px;
+      margin-top: 40px;
+      color: white;
+      background-color: black;
+      border: 2px solid white;
+    }
+    .black button:hover{
+      background-color: white;
+      border: 2px solid black;
+      color: red;
+    }
+
+    .footer-container {
+      background-color: black;
+      color: white;
+      padding: 30px;
+    }
+    footer .last{
+      text-align: center;
+       background-color: rgb(24, 23, 23);
+       padding: 10px;
+       font-size: 14px;
+       color: white;
+       letter-spacing: 2px;
+       margin-bottom: 0px;
+    }
+    #firstcol p{
+      margin-left: 150px;
+    }
+    .footer-container a{
+      margin-left: 150px;
+      list-style: none;
+      font-size: 15px;
+    }
+    .footer-container h4 {
+      margin-left: 150px;
+      text-decoration: underline 1px solid;
+      margin-bottom: 20px;
+      margin-top: 30px;
+    }
+    .card h2{
+      font-size: 18px;
+
+    }
+
+    .footer-container i {
+      margin: 7px;
+      font-size: 20px;
+    }
+
+        h1 {
+           background-color: red;
+           text-align: center; 
+           font-size: 40px; 
+           padding: 20px;
+           color: #f5efef; 
+        }
+        .card-body{
+            height: 200px;
+            
+        }
+        .card img{
+            margin-left: 30px;
+            height: 145px;
+            width: 140px ;
+        }
+        .card{
+          text-align: center;
+          padding: 30px;
+          margin: 20px;
+          height: 400px;
+        }
+        .card:hover {
+          transform: translateY(-1px);
+          box-shadow: 5px 5px 15px rgb(109, 107, 107); 
+        }
+        input{
+            width:50px ;
+        }
+        .btn{
+          background-color: rgb(19, 18, 18);
+          color: rgb(231, 226, 226);
+          font-weight: bolder;
+          border: none;
+          padding: 10px;
+          border-radius: 4px;
+          margin-top: 20px;
+          width: 150px;
+        }
+        .btn:hover{
+            background-color: white;
+            border: 2px solid red;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="pera">
+          <p>𝓢𝓱𝓸𝓹 𝓝𝓸𝔀, 𝓟𝓵𝓪𝔂 𝓕𝓸𝓻𝓮𝓿𝓮𝓻
+          </p>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbarr">
+          <div class="container-fluid">
+            <img src="Minimalist_Line_Business_Logo_1-removebg-preview.png" alt="">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex" role="search">
+                <input class="form-control me-2 input" type="search" placeholder="I'm searching for..." aria-label="Search">
+              </div>
+              <div class="icons">
+                <i id="icon" class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="list">
+          <a href="home.html">HOME</a>
+          <a href="brands.html">BRANDS</a>
+          <a href="comparison.html">COMPARISON</a>
+          <a href="summary.html">SUMMARY</a>
+          <a href="contactus.html">CONTACT US</a>
+        </div>
+      </header>
+
+
+</style>
+</head>
+<body>
+    <h1 class="text-center my-4">𝒢𝑜𝓁𝒻</h1>
+
+    <div class="contianer" >
+    <div class="row">
+    <div class="col-md-3">   
+    <div class="card" >
+    <img src="https://www.thewarehouse.co.nz/dw/image/v2/BDMG_PRD/on/demandware.static/-/Sites-twl-master-catalog/default/dwf2e454a5/images/hi-res/8D/31/R1317710_00.jpg?sw=765&sh=765" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Balls</h5>
+      <p class="Prices">Price: $32,30</p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-3">   
+    <div class="card" >
+    <img src="https://www.pxg.com/dw/image/v2/BFXB_PRD/on/demandware.static/-/Sites-pxg-master/default/dwe61436dd/images/hi-res/club-heads/irons/Black%20Ops/PXGM-12965-Black-Ops-Irons-Launch-eComm-images-660x990-01.png?sw=646" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Golf Club</h5>
+      <p class="Prices">Price: $30,30</p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-3">   
+    <div class="card" >
+    <img src="https://www.taylormadegolf.ca/dw/image/v2/AAIS_PRD/on/demandware.static/-/Sites-tmag-master-catalog/en_CA/v1735308894855/zoom/N76384_zoom_D2.jpg?sw=900&sh=900&sm=fit" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Golf Ball</h5>
+      <p class="Prices">Price: $54,99</p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-3">   
+    <div class="card" >
+    <img src="https://media.azadea.com/i/davinci/54_8520298_000__5401_000__101__01?$prd_large$" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Ball Wood</h5>
+      <p class="Prices">Price: $39,00</p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-3">   
+    <div class="card" >
+    <img src="https://i.etsystatic.com/53822837/r/il/67293c/6205877167/il_340x270.6205877167_5sym.jpg" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Woods</h5>
+      <p class="Prices">Price: $27,00</p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-3">   
+    <div class="card" >
+    <img src="https://cdn11.bigcommerce.com/s-lh0c6bzq2q/images/stencil/original/products/760/2582/8d3c47b8-0086-46af-9cd8-41cf96db4832__66337.1668520636.jpg" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Woodworm Golf</h5>
+      <p class="Prices">Price: $199,00</p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-3">   
+    <div class="card" >
+    <img src="https://5.imimg.com/data5/SELLER/Default/2024/1/378391296/WW/XK/GS/3858126/golf-kit-wooden-500x500.jpeg" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Wooden Golf Set</h5>
+      <p class="Prices">Price: $18,50</p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-3">   
+    <div class="card" >
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOOMFn33l5MW3597sfn_uKiZo5FzuBOc3a3Q&s" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Golf Display Cases</h5>
+      <p class="Prices">Price: $800,00</p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-3">   
+    <div class="card" >
+    <img src="https://i5.walmartimages.com/asr/c1f20196-32a9-414a-bc41-ae02ef5534ee.b5cabaa60ae92089b3cc92be6ee1f5a7.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"> Golf Club Set</h5>
+      <p class="Prices">Price: $249.00</p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-3">   
+    <div class="card" >
+    <img src="https://m.media-amazon.com/images/I/71so7GS5anL._AC_UY1000_.jpg" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Print Golf Ball Carry Bag</h5>
+      <p class="Prices">Price: $809,00</p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-3">   
+    <div class="card" >
+    <img src="https://topgolfgoodies.com/cdn/shop/products/golf_tool_kit_3_grande.jpg?v=1571732527" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Golf Set </h5>
+      <p class="Prices">Price: $59.95</p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-3">   
+    <div class="card" >
+    <img src="https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/db3e1fbad28b4c3d99ee250fadf81869_9366/womens-tour-badge-hat.jpg" class="" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Golf Hat</h5>
+      <p class="Prices">Price: $159</p>
+      <label for="#">Quantity</label>
+      <input type="number" min="0" value="0"><br> 
+      <a href="#" class="btn">Buy Now </a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+
+<div class="black">
+    <h2>BECOME AN INSIDER</h2>
+    <p>Be the first to hear about the latest products, sales and events from Wilson.
+    </p>
+    <button>Sign Up</button>
+  </div>
+
+  
+  <footer>
+    <div class="footer-container">
+      <div class="row">
+        <div id="firstcol" class="col-md-4">
+          <h4>Wilson Sporting Goods</h4>
+          <p>Address: [North-Nazimabad Karachi Pakistan.]</p>
+          <p>Email: info@wilson.com</p>
+          <p>Phone: [03334907469]</p>
+        </div>
+  
+        <div class="col-md-4">
+          <h4>Quick Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white">Home</a></li>
+            <li><a href="contact.html" class="text-white">About Us</a></li>
+            <li><a href="contact.html" class="text-white">Contact Us</a></li>
+            <li><a href="terms.html" class="text-white">Terms & Conditions</a></li>
+            <li><a href="privacy.html" class="text-white">Privacy Policy</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-4">
+          <h4>Follow Us</h4>
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i> Facebook</a><br>
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i> Instagram</a><br>
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i> Twitter</a><br>
+          <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i> YouTube</a><br>
+        </div>
+      </div>
+    </div>
+     <p class="last">© 2025 Wilson Sporting Goods. All rights reserved.</p>
+
+  </footer>
+
+</body>
+</html>
